@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Partnership for Goals</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+
+  <!-- Font Awesome (Icons) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Partnership for Goals</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h1 class="fw-bold text-primary">Contact Us</h1>
+        <p class="text-muted">We’d love to hear from you! Fill out the form below to reach out.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+
+          <!-- Formspree Integrated Form -->
+          <form action="https://formspree.io/f/xanpkgvk" method="POST" class="p-4 border rounded bg-white shadow-sm">
+            <div class="mb-3">
+              <label for="name" class="form-label fw-semibold">Name</label>
+              <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold">Email</label>
+              <input type="email" id="email" name="_replyto" class="form-control" placeholder="Your Email" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label fw-semibold">Message</label>
+              <textarea id="message" name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+
+            <!-- Hidden subject line -->
+            <input type="hidden" name="_subject" value="New message from Partnership for Goals website">
+
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+            <p class="text-success text-center mt-3">After submitting, you'll receive a confirmation email.</p>
+          </form>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="text-center mt-4">
+        <h5 class="fw-bold text-primary">You can also reach us via:</h5>
+        <ul class="list-inline mt-3">
+          <li class="list-inline-item mx-2">
+            <a href="mailto:2400718467@mubs.ac.ug" class="text-decoration-none text-dark">
+              <i class="fas fa-envelope text-primary"></i> 2400718467@mubs.ac.ug
+            </a>
+          </li>
+          <li class="list-inline-item mx-2">
+            <a href="tel:+256702518676" class="text-decoration-none text-dark">
+              <i class="fas fa-phone text-primary"></i> +256 702 518676
+            </a>
+          </li>
+          <li class="list-inline-item mx-2">
+            <a href="https://github.com/MrXeskevin" target="_blank" class="text-decoration-none text-dark">
+              <i class="fab fa-github text-primary"></i> GitHub
+            </a>
+          </li>
+          <li class="list-inline-item mx-2">
+            <a href="https://instagram.com/yourinstaprofile" target="_blank" class="text-decoration-none text-dark">
+              <i class="fab fa-instagram text-primary"></i> Instagram
+            </a>
+          </li>
+          <li class="list-inline-item mx-2">
+            <a href="https://twitter.com/yourxprofile" target="_blank" class="text-decoration-none text-dark">
+              <i class="fab fa-twitter text-primary"></i> X (Twitter)
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center py-3 mt-4">
+    &copy; <span id="year"></span> Partnership for Goals
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
